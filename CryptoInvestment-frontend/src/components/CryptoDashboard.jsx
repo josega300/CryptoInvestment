@@ -63,7 +63,7 @@ export default function CryptoDashboard() {
   // --- Efectos ---
   useEffect(() => {
     fetchCryptos();
-    const interval = setInterval(fetchCryptos, 30000);
+    const interval = setInterval(fetchCryptos, 10000);
     return () => clearInterval(interval);
   }, []);
 
